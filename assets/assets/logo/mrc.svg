@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="gold" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFE6A8"/>
+      <stop offset="1" stop-color="#C9A03F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="44%" r="46%">
+      <stop offset="0" stop-color="#FFBF40" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#FFBF40" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Dark backdrop so gold pops at 32px too -->
+  <rect width="512" height="512" fill="#0B0F14"/>
+
+  <!-- Shield (simple, bold shape = crisp at small sizes) -->
+  <path d="M256 64c90 0 168 30 168 30v158c0 88-72 163-168 196-96-33-168-108-168-196V94s78-30 168-30z"
+        fill="#121A24" stroke="#223041" stroke-width="8" />
+
+  <!-- Crown (minimal, geometric) -->
+  <path d="M256 132l22 24 32-24 34 24 22-24 14 50H242l14-50z"
+        fill="url(#gold)" stroke="#6B5721" stroke-width="6" />
+
+  <!-- Abstract wings + glow -->
+  <path d="M128 220c50-18 88-26 128-26s78 8 128 26c-36 22-82 38-128 38s-92-16-128-38z"
+        fill="#0F1622"/>
+  <circle cx="256" cy="256" r="96" fill="url(#glow)"/>
+
+  <!-- Monogram M (heavy, legible at 32px) -->
+  <text x="256" y="276" text-anchor="middle"
+        font-family="Inter,Segoe UI,Arial" font-weight="900" font-size="176"
+        fill="url(#gold)" stroke="#604B1A" stroke-width="10" paint-order="stroke">
+    M
+  </text>
+</svg>
