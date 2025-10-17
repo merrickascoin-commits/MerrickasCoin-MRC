@@ -140,11 +140,35 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="assets/logo/MRC.svg" alt="MerrickasCoin Logo">
-    <h1>MerrickasCoin (MRC)</h1>
-    <p>The Safe Meme on Base | Veteran Founded | 0% Tax | Liquidity Locked Until 2028 | Verified Contract | Ongoing Burns</p>
-  </header>
+ <header>
+  <!-- Inline Eagle SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="220" height="220">
+    <defs>
+      <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#FFD700"/>
+        <stop offset="100%" stop-color="#FF8C00"/>
+      </linearGradient>
+    </defs>
+    <!-- Wings -->
+    <path d="M120 200 L40 100 L20 180 L80 240 Z" fill="url(#gold)" />
+    <path d="M392 200 L472 100 L492 180 L432 240 Z" fill="url(#gold)" />
+    <!-- Body + Shield -->
+    <path d="M180 180 L332 180 L300 400 L212 400 Z" fill="url(#gold)" stroke="#FF8C00" stroke-width="4"/>
+    <path d="M200 200 L312 200 L292 360 L220 360 Z" fill="#111"/>
+    <!-- Crown -->
+    <circle cx="256" cy="140" r="30" fill="url(#gold)" stroke="#FF8C00" stroke-width="4"/>
+    <rect x="240" y="120" width="32" height="12" fill="#FFD700"/>
+    <line x1="256" y1="108" x2="256" y2="95" stroke="#FFD700" stroke-width="3"/>
+    <circle cx="256" cy="90" r="6" fill="#FFD700"/>
+    <!-- M Letter -->
+    <text x="256" y="310" text-anchor="middle" font-size="120" font-weight="bold" fill="url(#gold)" font-family="Arial Black">M</text>
+  </svg>
+
+  <h1>MerrickasCoin (MRC)</h1>
+  <p>The Safe Meme on Base | Veteran Founded | 0% Tax | Liquidity Locked Until 2028 | Verified Contract | Ongoing Burns</p>
+</header>
+
+
 
   <section class="contract">
     <h2>🔥 Contract Address</h2>
